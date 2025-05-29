@@ -9,7 +9,7 @@
     <h2>SoftWorld Bot Listening...</h2>
     <script>
         const synth = window.speechSynthesis;
-        const ws = new WebSocket('wss://meeting-data.bot.recall.ai/api/v1/transcript');
+        const ws = new WebSocket('wss://meeting-data.bot.recall.ai/api/v1/bot/7fd50206-ddcc-4ec2-a086-9f89865bfe44/transcript');
 
         ws.onmessage = (event) => {
             const transcript = JSON.parse(event.data).transcript;
